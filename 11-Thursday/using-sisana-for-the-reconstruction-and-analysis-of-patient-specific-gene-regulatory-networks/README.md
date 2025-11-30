@@ -1,0 +1,6 @@
+# Using SiSaNA for the reconstruction and analysis of patient-specific gene regulatory networks
+Reconstructing gene regulatory networks is a common method in the field of bioinformatics for uncovering the transcriptional regulation driving patterns of disease. In these networks, some tools (such as PANDA and LIONESS) model the relationship between transcription factor and target genes. However, these tools are commonly not user-friendly, requiring a fair amount of prior programming experience to be able to reconstruct the networks and perform the downstream network.   Therefore, a new tool called SiSaNA (Single-Sample Network Analysis) was developed. SiSaNA allows users to reconstruct and analyze single-sample gene regulatory networks all via the command line, eliminating the need for prior programming experience.   Attendees will be worked through an example analysis that comes with the SiSaNA distribution, where we will preprocess input data, reconstruct networks, calculate critical network properties for identifying transcription factors and genes of interest, visualize these results, and identify biological pathways that are enriched in the sample groups.  More information on SiSaNA can be found at the following GitHub repository: https://github.com/kuijjerlab/sisana/
+## Instructors
+Nolan Newman
+## Live Troubleshooting Session
+## Software Requirements

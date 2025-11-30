@@ -1,0 +1,6 @@
+# Introduction to neural oscillations analysis
+In the brain, vast networks of neurons are continuously active, exchanging information through electrical and chemical signals. The combined activity of these neurons generates rhythmic fluctuations in electrical fields, known as neural oscillations. Analysing these oscillations offers a window into ongoing neural computations and allows to distinguish between different functional brain states.   In this workshop, we will explore different techniques to analyse the oscillations from electrocorticograms (ECoG) as well as Local Field Potential (LFP) recorded in the hippocampus of sleeping and behaving rats. We will start by working through specific examples to highlight the strengths and limitations of different methods, from basic filtering to more advanced approaches such as the Fourier transform and Morlet wavelet analysis. We will then explore how spectral features relate to different brain states, for example distinguishing sleep stages or identifying signatures of motor activity. Finally, we will address common pitfalls in time-frequency analysis, such as motion artifacts and electrical noise contamination, and present strategies to mitigate them.
+## Instructors
+Cantin Ortiz, Letizia Signorelli
+## Live Troubleshooting Session
+## Software Requirements

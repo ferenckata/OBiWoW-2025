@@ -1,0 +1,6 @@
+# From Tidy Data to Tidy Models: Modeling Sensitive Health Data in R
+Biomedical research increasingly relies on the ability to work responsibly with complex datasets while maintaining transparency and reproducibility. This hands-on workshop introduces participants to the powerful R ecosystems of tidyverse and tidymodels, with a focus on analyzing sensitive health care data. We will begin by exploring the tidyverse approach to data wrangling, visualization, and transformation—tools that make it easier to prepare real-world health data for analysis while ensuring reproducibility. Building on this foundation, we will turn to tidymodels, a cohesive framework for modeling and machine learning in R. Through guided examples, participants will learn how to manipulate data frames, clean data, specify models, create training and test splits, perform cross-validation, and evaluate predictive performance. By the end of the workshop, participants will have a practical workflow that takes them “from tidy data to tidy models,” equipping them with reproducible methods to analyze sensitive health data responsibly.
+## Instructors
+Brooke Wolford
+## Live Troubleshooting Session
+## Software Requirements

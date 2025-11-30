@@ -1,0 +1,6 @@
+# Computational Structural Biology – How to Analyze and Visualize Molecules in 3D
+This hands-on workshop introduces participants to the fundamentals of computational structural biology and the practical skills needed to visualize and analyze biomolecular structures in three dimensions. After a brief introduction to the principles and applications of structural biology, we will focus on protein structure visualization and analysis using PyMOL, a widely used molecular graphics tool.  Participants will explore real examples, including full antibodies, single-domain antibodies (VHHs), and antibody–antigen complexes, gaining an understanding of how structural insights inform research in molecular biology, immunology, and drug design. The session will also include a concise overview of antibody architecture, helping attendees interpret structural features relevant to binding and function.  By the end of the workshop, participants will be able to load, visualize, and manipulate molecular structures, identify key interaction sites, and generate publication-quality 3D representations. No prior experience in structural biology is required. Bring just curiosity and an interest in exploring how molecules look and behave in 3D space!
+## Instructors
+Eva Smorodina
+## Live Troubleshooting Session
+## Software Requirements

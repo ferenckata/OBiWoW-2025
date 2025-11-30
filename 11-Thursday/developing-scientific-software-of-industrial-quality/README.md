@@ -1,0 +1,6 @@
+# Developing Scientific Software of Industrial Quality
+In this workshop, we will bridge the gap between writing code that "works for now" and developing robust, reliable, and maintainable software that meets industrial standards. Many scientists and researchers are self-taught programmers, focusing on rapid prototyping and results. However, as software becomes critical for analysis, simulation, and decision-making, its quality, reproducibility, and longevity become paramount.  We will discuss the core principles and practical tools for building scientific software that is not only correct but also trustworthy and scalable. The session will cover foundational concepts like version control, testing, and documentation, framing them as essential components of the modern scientific workflow, not just "extra work." Finally, we will demonstrate how to structure a small scientific project from scratch, applying these best practices to create a solid foundation for future development.
+## Instructors
+Daniel Rivas
+## Live Troubleshooting Session
+## Software Requirements
