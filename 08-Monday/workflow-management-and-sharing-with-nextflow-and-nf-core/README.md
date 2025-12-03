@@ -24,24 +24,29 @@ To create and enter a conda environment:
 conda env create --file nf-core.yaml -n obiwow2025
 
 conda activate obiwow2025
+
+## install nextflow and nf-core
+curl -s https://get.nextflow.io | bash
+echo $PATH
+# depending on what is in your PATH, you can move nextflow executable there
+# mv nextflow /usr/bin
+# if you already have nextflow installation, move the newly installed version to the folder in the beginning of PATH
+nextflow -v
+nextflow -h
+
+pip install nf-core
+nf-core -h
+
 ```
 
-### How to do it without the environment? ###
-
-If the environment doesn't work or you don't want to create one, just install Nextflow and nf-core yourself and make sure they are available on a path. You can check the success of installation with ```nextflow -h``` and ```nf-core -h```.
-
-#### Nextflow ####
-
-Install Nextflow following instructions here:
+More Nextflow instructions are here:
 
 ```bash
 https://www.nextflow.io/docs/latest/install.html
 ```
 
-#### nf-core ####
-
-Install with pip:
+More nf-core instructions are here:
 
 ```bash
-pip install nf-core
+https://nf-co.re/docs/usage/getting_started/introduction
 ```
