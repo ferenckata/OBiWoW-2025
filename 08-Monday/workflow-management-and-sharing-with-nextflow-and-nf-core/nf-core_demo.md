@@ -36,10 +36,10 @@ You can see all available pipelines with ```nf-core pipelines list```.
 nf-core interface
 ```
 
-## Single-cell RNA-seq sample sheetfile ##
+## RNA-seq sample data ##
 
 ```
-"https://github.com/nf-core/test-datasets/raw/scrnaseq/samplesheet-2-0.csv"
+"https://github.com/nf-core/test-datasets/tree/rnaseq"
 ```
 
 ## Demo pipeline ##
