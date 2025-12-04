@@ -55,14 +55,14 @@ workflow {
 docker.enabled = true
 ```
 
-We have already added directive in the FASTQC process, pointing to a container on dockerhub which we will use to run fastqc. In the nextflow.config we have also told nextflow to use docker to run the container.
+We have already added a directive in the FASTQC process, pointing to a container on dockerhub which we will use to run fastqc. In the nextflow.config we have also told nextflow to use docker to run the container.
 
 Now we need to get our input channel. The first step of our pipeline is running fastqc on the fastq files. For this we can use Channel.fromPath(), which is one of nextflows many channel factories.
 
 It adds files from a path using a regular expression and returns it as a nextflow channel. 
 e.g. ``` ch_A = Channel.fromPath("/some/path/*.file_ext") ```
 
-In the workflow section, create a channel that takes all the .fastq.gz files. You can make nextflow print a channel using ch_A.view()
+In the workflow section, create a channel that takes all the .fastq.gz files. You can make nextflow print a channel using ```ch_A.view()```
 
 When you are ready to have a look at your channel we can try to run nextflow on what we have currently. Before doing that, it is recommended to first run it in preview mode. This will tell nextflow to try to compile the workflow, without executing any jobs. You can do this with ```nextflow run main.nf -preview```
 
@@ -130,9 +130,9 @@ workflow {
 
 Now we have our channel with fastq files. Lets setup the FASTQC process to process them each one at a time.
 
-In the input section, tell the process to take path(fastq_file). path is a nextflow type, that means that nextflow will expect a path to a file. After we have defined that we can refer to this file in the script section, where we tell nextflow what to do with the input.
+In the input section, tell the process to take ```path(fastq_file)```. path is a nextflow type, that means that nextflow will expect a path to a file. After we have defined that we can refer to this file in the script section, where we tell nextflow what to do with the input.
 
-Try to run with -preview , this will tell you if you have any syntax mistakes in your process definition.
+Try to run with ```-preview```, this will tell you if you have any syntax mistakes in your process definition.
 
 ```
 process FASTQC {
@@ -188,7 +188,7 @@ workflow {
 
 Success? Take a look around the ./work directory, this is where Nextflow makes working directories for each job to run in. Find one of the .html files and open it.
 
-It is cumbersome to look at each one at a time, lets pass the ouputs on to multiQC to make a single report. In order to pass on the fastq files, we need to define the output section such that it captures the right files. Use path("*_something"), emit: output_name
+It is cumbersome to look at each one at a time, lets pass the ouputs on to multiQC to make a single report. In order to pass on the fastq files, we need to define the output section such that it captures the right files. Use ```path("*_something"), emit: output_name```
 You can add several named outputs
 
 In the workflow you can extract the output channel from FASTQC, using ```FASTQC.out.output_name```
@@ -279,7 +279,7 @@ It is slightly annoying to find your files in nextflows work directories, and ac
 
 Lets add an instruction telling nextflow to save the 'multiqc_report.html' to 'outputs/multiQC'. To accomplish that we add
 
-publishDir 'outputs/multiQC'
+```publishDir 'outputs/multiQC'```
 
 to the MULTIQC process definition
 
@@ -402,9 +402,4 @@ fastqc ${reads}
 
 fastqc can take several files at a time, so it just runs the paired files together instead
 
-Now, finish the workflow to run both the trimmed and untrimmed QC
-
-
-
-
-
+Now, finish the workflow to run both the trimmed and untrimmed QC. Next step, is to align the trimmed files
