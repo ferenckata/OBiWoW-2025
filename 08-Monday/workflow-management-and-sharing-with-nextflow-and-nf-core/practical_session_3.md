@@ -44,5 +44,5 @@ In the end of the workflow block, we need to add our outputs to the emit section
 emit:
     multiqc_report = MULTIQC.out.report
 ```
-Finally, before you run the pipeline, we should define
+Finally, before you run the pipeline, we should define and output directory in the config file.
 To run our pipeline we call ```nextflow run main.nf```, like we did before
