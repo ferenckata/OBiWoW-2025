@@ -32,11 +32,17 @@ Now lets install our modules. We can find availible modules online at https://nf
 nf-core modules install fastqc
 nf-core modules install multiqc
 ```
- 
+
 We can find our newly installed modules at ```./modules/nf-core/```
 Have a look at their .nf files, to see what their input and output channels are. You can also use ```nf-core modules info fastqc```.
 
 Now we can start putting together our processes into a pipeline like we did in the earlier session (remember to include the modules). Since the FASTQC process is outputting the .zip in a tuple with the metadata map, we need to only collect the file without the map. For this purpose we can use ```.collect{it[1]}```, which tells the collect method to iterate over each element in the channel and only take the element in position 1 of the tuple (the index starts at 0).
 MultiQC has several optional input channels (https://nf-co.re/modules/multiqc/). We dont care about these at the moment, so we just give empty lists ```[]``` instead. 
 
+In the end of the workflow block, we need to add our outputs to the emit section. This is how outputs from subworkflows are defined.
+```
+emit:
+    multiqc_report = MULTIQC.out.report
+```
+Finally, before you run the pipeline, we should define
 To run our pipeline we call ```nextflow run main.nf```, like we did before
