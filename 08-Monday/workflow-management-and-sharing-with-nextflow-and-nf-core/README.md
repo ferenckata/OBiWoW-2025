@@ -18,8 +18,8 @@ git https://github.com/OBIWOW/OBiWoW-2025.git
 cd OBiWoW-2025
 ```
 
-
 ```bash
+
 ## install nextflow and nf-core
 curl -s https://get.nextflow.io | bash
 echo $PATH
